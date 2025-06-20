@@ -1,0 +1,24 @@
+Recursion is a programming technique in which a method calls itself to solve a problem in smaller parts.
+
+In simple terms, recursion breaks down a problem into smaller versions of the same problem until a base case is reached,
+which stops further recursive calls.
+
+A recursive function typically has two main parts:
+1. Base Case – the condition under which the recursion stops.
+2. Recursive Case – the part where the function calls itself with a modified input.
+
+Example:
+To calculate factorial of a number n:
+    factorial(n) = n * factorial(n - 1)
+    factorial(1) = 1 (base case)
+
+This approach simplifies problems that naturally have a repetitive or branching structure, such as:
+- Mathematical calculations (e.g., factorial, Fibonacci)
+- Tree/graph traversal
+- Divide-and-conquer algorithms (e.g., Merge Sort, Quick Sort)
+
+In the context of financial forecasting, recursion can help calculate future values by repeatedly applying a growth
+factor to the current value over time. It provides a clean and logical way to model the compounding effect in finance.
+
+Although recursion is powerful, it can be inefficient if overused without optimization (like memoization or iteration),
+especially when dealing with large input sizes or deep call stacks.

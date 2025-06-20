@@ -1,0 +1,25 @@
+Time Complexity:
+
+The recursive function `predictFutureValue(currentValue, growthRate, years)` makes one recursive call per year,
+decreasing the year count by 1 each time.
+
+Therefore, the time complexity is:
+    ➤ Time Complexity = O(n), where n is the number of years
+
+Each recursive call performs a simple multiplication and subtraction, so the total number of calls is proportional to n.
+
+------------------------------------------------
+Optimization:
+
+To optimize the recursive approach and avoid excessive computation or deep recursion, the following methods can be applied:
+
+Use an Iterative Approach:
+   Convert the recursive logic to a loop. This reduces the overhead of recursive calls and avoids stack overflows.
+
+   Example:
+    for (int i = 0; i < years; i++) {
+        currentValue *= (1 + growthRate);
+    }
+
+For this financial forecasting tool, while recursion is elegant and demonstrates the logic clearly, 
+the iterative version is more efficient and safer for real-world use cases involving large numbers of years.

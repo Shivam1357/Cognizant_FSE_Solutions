@@ -1,0 +1,11 @@
+Big O Notation, helps analyze the efficiency of algorithms.
+It is used to describe the upper bound of time or space complexity in relation to input size (n),
+allowing us to compare the scalability of different algorithms.
+
+For search operations:
+- Best case: The element is found immediately (e.g., first index).
+- Average case: The element is somewhere in the middle of the dataset.
+- Worst case: The element is not present or at the end of the dataset.
+
+This understanding helps in choosing the most efficient algorithm for product search in
+an e-commerce platform where fast search results are crucial for user experience.

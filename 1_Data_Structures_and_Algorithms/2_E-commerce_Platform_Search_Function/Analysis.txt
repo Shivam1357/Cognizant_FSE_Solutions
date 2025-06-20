@@ -1,0 +1,19 @@
+After implementing linear and binary search, we analyzed their time complexities.
+
+- Linear Search:
+  Time Complexity = O(n)
+  Works on unsorted data.
+  Slower for large datasets.
+
+- Binary Search:
+  Time Complexity = O(log n)
+  Requires sorted data.
+  Much faster for large datasets.
+
+Conclusion:
+Binary Search is more suitable for e-commerce platforms as it provides faster results,
+which is important for customer satisfaction and performance. However, the data must
+be sorted, so real-world systems often use indexing or advanced search data structures
+for optimization.
+
+This implementation demonstrates the importance of algorithm choice in search functionality.
