@@ -1,0 +1,41 @@
+In this inventory management system, we used a HashMap to store products using their productId as the key.
+This makes it very efficient for common operations like adding, updating, or deleting products.
+
+Here’s how the time complexity looks for each operation:
+
+1. Add Product:
+   When we use `put(productId, product)` in a HashMap, it takes constant time on average.
+   ➤ Time Complexity: O(1)
+
+2. Update Product:
+   We first retrieve the product using `get(productId)` and then change its quantity or price.
+   ➤ Time Complexity: O(1)
+
+3. Delete Product:
+   Deleting a product by key using `remove(productId)` is also very fast.
+   ➤ Time Complexity: O(1)
+
+So, all the basic operations — add, update, and delete — are done in constant time, which means even
+if we have thousands of products, the system will still perform very efficiently.
+
+
+
+
+
+How Can We Optimize or Improve These Operations?
+
+
+
+The current implementation is already quite optimized using HashMap, but here are some things we can do:
+
+✓ Ensure productId is always unique — this avoids accidental overwrites.
+
+✓ Add search/filtering by name or category using TreeMap or additional indexes if needed.
+
+✓ If we ever scale to millions of products, storing data in a database and using indexing (like SQL indexes)
+  would make it more scalable and persistent.
+
+✓ For sorting, we can temporarily convert the HashMap to a List and sort it using custom comparators.
+
+In summary, HashMap is a great choice for quick lookups and updates, and with a few enhancements,
+this system can be scaled or extended as needed in real-world applications.

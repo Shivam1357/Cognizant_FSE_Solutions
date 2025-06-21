@@ -1,0 +1,14 @@
+In a warehouse inventory system, efficiency in data storage and retrieval is critical,
+especially when dealing with hundreds or thousands of products.
+
+Why Data Structures & Algorithms Matter:
+
+- Efficient algorithms reduce time in locating, updating, or deleting products.
+- The right data structure ensures scalability, making the system responsive even as data grows.
+
+Suitable Data Structures:
+1. ArrayList – Good for sequential access but slow for lookups by ID (O(n)).
+2. HashMap – Best for quick lookups using unique keys (productId). Offers O(1) average time for add, update, delete.
+
+For this system, we choose HashMap<Integer, Product> to store products with productId as the key.
+
