@@ -10,13 +10,4 @@ public class Product {
         this.productName = productName;
         this.category = catergory;
     }
-
-    public Product(int i, String string, int j, int k) {
-        //TODO Auto-generated constructor stub
-    }
-
-    public Integer getProductId() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getProductId'");
-    }
 }
